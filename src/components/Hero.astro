@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="wrapper">
+        <video autoplay muted loop preload="auto" id="hero-video"> 
+            <source src="public/images/heroVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-caption">
+            <h1>Isaac Evans</h1>
+            <h2>Aspiring Web Developer</h2>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    h1{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .hero-caption{
+        position: relative;
+        z-index: 10;
+        margin-top: -20rem; 
+    }
+    .container{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--primary);
+        width: 85%;
+        height: 90vh;
+    }
+    #hero-video{
+        height: 90%;
+        width: 85%;
+        position: absolute;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 40px;
+        z-index: 5;
+    }
+
+</style>
