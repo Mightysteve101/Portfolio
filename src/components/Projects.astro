@@ -1,0 +1,58 @@
+<section>
+    
+    <div class="title">
+        <h1>Projects</h1>
+    </div>
+
+    <div class="pro-container">
+        <div id="image-track" data-mouse-down-at="0">
+            <img class="image" src="/public/photo-1.jpg" alt="photo1" draggable="false" />
+            <img class="image" src="/public/photo-2.jpg" alt="photo2" draggable="false" />
+            <img class="image" src="/public/photo-3.jpg" alt="photo3" draggable="false" />
+            <img class="image" src="/public/photo-4.jpg" alt="photo4" draggable="false" />
+        </div>
+    </div>
+</section>
+
+<style>
+
+    .title{
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        height: 20%;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    h1{
+        color: #2c08a0dc;
+        margin-left: 5rem;
+        font-size: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    #image-track {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vmin;
+    justify-content: center;
+    align-items: center;
+    user-select: none; /* -- Prevent image highlighting -- */
+    }
+
+    #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    border-radius: 40px;
+    }
+    .pro-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        
+    }
+</style>
