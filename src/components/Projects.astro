@@ -1,20 +1,88 @@
 <section>
     
     <div class="title">
-        <h1>Projects</h1>
+        <h1>Exploring Fresh <span style="color: #ffc107;">Challenges.</span></h1>
     </div>
-
     <div class="pro-container">
-        <div id="image-track" data-mouse-down-at="0">
-            <img class="image" src="/public/photo-1.jpg" alt="photo1" draggable="false" />
-            <img class="image" src="/public/photo-2.jpg" alt="photo2" draggable="false" />
-            <img class="image" src="/public/photo-3.jpg" alt="photo3" draggable="false" />
-            <img class="image" src="/public/photo-4.jpg" alt="photo4" draggable="false" />
+        <div id="image-track">
+            <a href="https://github.com/Mightysteve101/ENMU_Faculty">
+                <div class="heading item-1">
+                    <h3>Project 1</h3>
+                    <h2>ENMU Faculty Page</h2>
+                </div>
+            </a>
+            <a href="https://github.com/Mightysteve101/art-culture-grid">
+                <div class="heading item-2">
+                    <h3>Project 2</h3>
+                    <h2>ENMU Culture Page Update</h2>
+                </div>
+            </a>
+            <a href="https://github.com/Mightysteve101/Database-Project">
+                <div class="heading item-3">
+                    <h3 style="color: white">Project 3</h3>
+                    <h2 style="color: white">SQLite Group Project</h2>
+                </div>
+            </a>
+            <a href="https://github.com/Mightysteve101/Faculty_Advisor_Directroy">
+                <div class="heading item-4">
+                    <h3 style="color: white">Project 4</h3>
+                    <h2 style="color: white">Faculty Advisor Directory Update</h2>
+                </div>
+            </a>
         </div>
-    </div>
+    </div>    
 </section>
 
 <style>
+
+    h3{
+        padding-bottom: .5rem;
+    }
+
+    .heading{
+        padding: 2rem;
+    }
+    
+
+    #image-track > a > .item-1{
+        background-image: url("public/images/mascot.jpg");
+        width: 40vmin;
+        height: 75vmin;
+        border-radius: 40px;
+        background-position: 45%;
+        background-size: cover;
+        z-index: 5;
+    }
+
+    #image-track > a > .item-2{
+        background-image: url("public/images/art-culture.jpg");
+        width: 40vmin;
+        height: 75vmin;
+        border-radius: 40px;
+        background-position: center;
+        background-size: cover;
+        z-index: 5;
+    }
+
+    #image-track > a > .item-3{
+        background-image: url("public/images/database.jpg");
+        width: 40vmin;
+        height: 75vmin;
+        border-radius: 40px;
+        background-position: center;
+        background-size: cover;
+        z-index: 5;
+    }
+    
+    #image-track > a > .item-4{
+        background-image: url("public/images/enmu.jpg");
+        width: 40vmin;
+        height: 75vmin;
+        border-radius: 40px;
+        background-position: center;
+        background-size: cover;
+        z-index: 5;
+    }
 
     .title{
         font-size: 1rem;
@@ -26,10 +94,9 @@
     }
 
     h1{
-        color: #2c08a0dc;
         margin-left: 5rem;
-        font-size: 5rem;
-        padding-bottom: 2rem;
+        font-size: 4rem;
+        font-weight: 500;
     }
 
     #image-track {
@@ -41,18 +108,17 @@
     user-select: none; /* -- Prevent image highlighting -- */
     }
 
-    #image-track > .image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: 100% center;
-    border-radius: 40px;
+    #image-track > a{
+        text-decoration: none;
+        color: var(--typography)
     }
+
     .pro-container{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 95vh;
+        padding-bottom: 5rem;
         
     }
 </style>

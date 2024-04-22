@@ -5,9 +5,12 @@
             <h1>
                 About Me
             </h1>
-            <h2>
-                Hey there! I’m Isaac Evans, a web developer from the city of Las Cruces, New Mexico. Graduating from Eastern New Mexico University with a degree in Computer Science, I found my passion for creating aesthetic looking websites. I worked with Eastern New Mexico University to maintain and update their school website which showed a little at what is was like to be a developer. In my free time I enjoy playing guitar, video games and Jiu-Jitsu.
-            </h2>
+            
+            <div class="description">
+                <h2>
+                    Hey there! I’m Isaac Evans, a web developer from the city of Las Cruces, New Mexico. Graduating from <span style="color: #198754;">Eastern New Mexico University with a degree in Computer Science</span>, I found my passion for creating aesthetic looking websites. I worked with Eastern New Mexico University to maintain and update their school website which showed a little at what is was like to be a developer. In my free time I enjoy playing guitar, video games and Jiu-Jitsu.
+                </h2>
+            </div>
         </div>
     </div>
 </section>
@@ -20,14 +23,24 @@
     }
 
     h1{
-        color: #2c08a0dc;
         margin-left: 5rem;
-        font-size: 5rem;
+        font-size: 4rem;
         padding-bottom: 2rem;
+        font-weight:500;
     }
     h2{
-        margin-left: 5rem;
-        padding-right: 2rem;
-        line-height:2.2rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-left: 4rem;
+        padding-right: 25rem;
+        color: rgba(96, 96, 96, 0.907);
+    }
+
+    .description{
+        padding: 1rem;
+    }
+
+    .about-container{
+        background-color: rgba(245, 245, 247, 0.907);
     }
 </style>
