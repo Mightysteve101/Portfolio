@@ -33,6 +33,31 @@
     </div>    
 </section>
 
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const pro_container = document.querySelector(".pro-container");
+        const item_1 = document.querySelector("item-1");
+        const item_2 = document.querySelector("item-2");
+        const item_3 = document.querySelector("item-3");
+        const item_4 = document.querySelector("#image-track > a > .item-4");
+        
+        pro_container.onScroll = function(){
+            unshuffle();
+        };
+        
+        function unshuffle(){
+            const scrollTop = pro_container.scrollTop;
+            
+            if(scrollTop > 300){
+                item_4.style.transform = 'translateY(50%)';
+            }
+        };
+    });
+
+</script>
+
 <style>
 
     h3{
@@ -52,6 +77,7 @@
         background-position: 45%;
         background-size: cover;
         z-index: 5;
+        position: absolute;
     }
 
     #image-track > a > .item-2{
@@ -62,6 +88,7 @@
         background-position: center;
         background-size: cover;
         z-index: 5;
+        position: absolute;
     }
 
     #image-track > a > .item-3{
@@ -72,6 +99,7 @@
         background-position: center;
         background-size: cover;
         z-index: 5;
+        position: absolute;
     }
     
     #image-track > a > .item-4{
@@ -82,6 +110,7 @@
         background-position: center;
         background-size: cover;
         z-index: 5;
+        position: absolute;
     }
 
     .title{
@@ -115,10 +144,11 @@
 
     .pro-container{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: baseline;
         height: 95vh;
         padding-bottom: 5rem;
-        
-    }
+        padding-left: 4rem;
+        padding-top: 3rem;
+}
 </style>
