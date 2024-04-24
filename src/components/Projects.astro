@@ -1,62 +1,36 @@
-<section>
-    
+<div class="container">
     <div class="title">
         <h1>Exploring Fresh <span style="color: #ffc107;">Challenges.</span></h1>
     </div>
     <div class="pro-container">
         <div id="image-track">
             <a href="https://github.com/Mightysteve101/ENMU_Faculty">
-                <div class="heading item-1">
+                <div class="heading item-1 scroll-reveal">
                     <h3>Project 1</h3>
                     <h2>ENMU Faculty Page</h2>
                 </div>
             </a>
             <a href="https://github.com/Mightysteve101/art-culture-grid">
-                <div class="heading item-2">
+                <div class="heading item-2 scroll-reveal">
                     <h3>Project 2</h3>
                     <h2>ENMU Culture Page Update</h2>
                 </div>
             </a>
             <a href="https://github.com/Mightysteve101/Database-Project">
-                <div class="heading item-3">
+                <div class="heading item-3 scroll-reveal">
                     <h3 style="color: white">Project 3</h3>
                     <h2 style="color: white">SQLite Group Project</h2>
                 </div>
             </a>
             <a href="https://github.com/Mightysteve101/Faculty_Advisor_Directroy">
-                <div class="heading item-4">
+                <div class="heading item-4 scroll-reveal">
                     <h3 style="color: white">Project 4</h3>
                     <h2 style="color: white">Faculty Advisor Directory Update</h2>
                 </div>
             </a>
         </div>
-    </div>    
-</section>
-
-
-<script>
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const pro_container = document.querySelector(".pro-container");
-        const item_1 = document.querySelector("item-1");
-        const item_2 = document.querySelector("item-2");
-        const item_3 = document.querySelector("item-3");
-        const item_4 = document.querySelector("#image-track > a > .item-4");
-        
-        pro_container.onScroll = function(){
-            unshuffle();
-        };
-        
-        function unshuffle(){
-            const scrollTop = pro_container.scrollTop;
-            
-            if(scrollTop > 300){
-                item_4.style.transform = 'translateY(50%)';
-            }
-        };
-    });
-
-</script>
+    </div> 
+</div>  
 
 <style>
 
@@ -67,7 +41,11 @@
     .heading{
         padding: 2rem;
     }
-    
+
+
+    #image-track{
+        transform: translate(-45%);
+    }
 
     #image-track > a > .item-1{
         background-image: url("public/images/mascot.jpg");
@@ -89,6 +67,7 @@
         background-size: cover;
         z-index: 5;
         position: absolute;
+        transition: transform 1s;
     }
 
     #image-track > a > .item-3{
@@ -100,6 +79,7 @@
         background-size: cover;
         z-index: 5;
         position: absolute;
+        transition: transform 1s;
     }
     
     #image-track > a > .item-4{
@@ -111,7 +91,26 @@
         background-size: cover;
         z-index: 5;
         position: absolute;
+        transition: transform 1s;
     }
+
+    #image-track > a > .item-1.active{
+        transform: translate(0%);
+    }
+    
+    #image-track > a > .item-2.active{
+        transform: translate(100%);
+    }
+    
+    #image-track > a > .item-3.active{
+        transform: translate(200%);
+    }
+
+    #image-track > a > .item-4.active{
+        transform: translate(300%);
+    }
+
+
 
     .title{
         font-size: 1rem;
@@ -152,3 +151,8 @@
         padding-top: 3rem;
 }
 </style>
+
+
+<script>
+    import "../scripts/projects.js";
+</script>
