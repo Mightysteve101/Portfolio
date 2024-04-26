@@ -2,7 +2,7 @@
     
     <div class="about-container" id="about">
         <div class="wrapper">
-            <h1>
+            <h1 class="about-header">
                 About Me
             </h1>
             
@@ -27,7 +27,7 @@
         font-size: 1rem;
     }
 
-    h1{
+    .about-header{
         margin-left: 5rem;
         font-size: 4rem;
         padding-bottom: 2rem;
@@ -48,4 +48,43 @@
     .about-container{
         background-color: rgba(245, 245, 247, 0.907);
     }
+
+    @media (max-width: 1200px){
+        .about-header{
+            font-size: 3.7rem;
+        }
+        h2{
+            font-size: 1.3rem;
+            padding-right:15rem;
+        }
+    }
+
+    @media (max-width: 1000px){
+        h2{
+            padding-right:10rem;
+        }
+    }
+
+    @media (max-width: 660px){
+        .about-header{
+            font-size: 3.5rem;
+        }
+        h2{
+            font-size: 1.1rem;
+            padding-right: 5rem;
+        }
+    }
+
+    @media (max-width:560px){
+        .about-header{
+            font-size: 3.3rem;
+        }
+        h2{
+            font-size: .9rem;
+            padding-right: 1rem;
+        }
+    }
+
+
+
 </style>

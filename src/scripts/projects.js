@@ -41,37 +41,3 @@ document.addEventListener("DOMContentLoaded", function() {
         rootMargin: '-200px',
     })
 });
-
-/*
-    <div class="title">
-    <h1>Exploring Fresh <span style="color: #ffc107;">Challenges.</span></h1>
-</div>
-<div class="pro-container">
-    <div id="image-track">
-        <a href="https://github.com/Mightysteve101/ENMU_Faculty">
-            <div class="heading item-1">
-                <h3>Project 1</h3>
-                <h2>ENMU Faculty Page</h2>
-            </div>
-        </a>
-        <a href="https://github.com/Mightysteve101/art-culture-grid">
-            <div class="heading item-2">
-                <h3>Project 2</h3>
-                <h2>ENMU Culture Page Update</h2>
-            </div>
-        </a>
-        <a href="https://github.com/Mightysteve101/Database-Project">
-            <div class="heading item-3">
-                <h3 style="color: white">Project 3</h3>
-                <h2 style="color: white">SQLite Group Project</h2>
-            </div>
-        </a>
-        <a href="https://github.com/Mightysteve101/Faculty_Advisor_Directroy">
-            <div class="heading item-4">
-                <h3 style="color: white">Project 4</h3>
-                <h2 style="color: white">Faculty Advisor Directory Update</h2>
-            </div>
-        </a>
-    </div>
-</div>   
-*/

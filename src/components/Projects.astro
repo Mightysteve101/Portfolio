@@ -1,6 +1,6 @@
 <div class="container" id="projects">
     <div class="title">
-        <h1>Exploring Fresh <span style="color: #6207ff;">Challenges.</span></h1>
+        <h1>Exploring Fresh <span style="color:#6207ff;">Challenges.</span></h1>
     </div>
     <div class="pro-container">
         <div id="image-track">
@@ -45,6 +45,10 @@
 
     .heading{
         padding: 2rem;
+        width:22.5vw;
+        height:75vh;
+        border-radius: 40px;
+        position: absolute;
     }
 
 
@@ -54,68 +58,52 @@
 
     #image-track > a > .item-1{
         background-image: url("public/images/blue_gradient.jpg");
-        width: 40vmin;
-        height: 75vmin;
-        border-radius: 40px;
         background-position: 45%;
         background-size: cover;
         z-index: 5;
-        position: absolute;
     }
 
     #image-track > a > .item-2{
         background-image: url("public/images/green_gradient.jpg");
-        width: 40vmin;
-        height: 75vmin;
-        border-radius: 40px;
         background-position: center;
         background-size: cover;
         z-index: 5;
-        position: absolute;
         transition: transform 1s;
     }
 
     #image-track > a > .item-3{
         background-image: url("public/images/purple_gradient.jpg");
-        width: 40vmin;
-        height: 75vmin;
-        border-radius: 40px;
         background-position: center;
         background-size: cover;
         z-index: 5;
-        position: absolute;
         transition: transform 1s;
     }
     
     #image-track > a > .item-4{
         background-image: url("public/images/sun_gradient.jpg");
-        width: 40vmin;
-        height: 75vmin;
-        border-radius: 40px;
         background-position: center;
         background-size: cover;
         z-index: 5;
-        position: absolute;
         transition: transform 1s;
     }
 
     #image-track > a > .item-1.active{
-        transform: translate(0%);
+        transform: translateX(0%);
         opacity: 1;
     }
     
     #image-track > a > .item-2.active{
-        transform: translate(100%);
+        transform: translateX(100%);
         opacity: 1;
     }
     
     #image-track > a > .item-3.active{
-        transform: translate(200%);
+        transform: translateX(200%);
         opacity: 1;
     }
 
     #image-track > a > .item-4.active{
-        transform: translate(300%);
+        transform: translateX(300%);
         opacity: 1;
     }
 
@@ -156,8 +144,94 @@
         align-items: baseline;
         height: 95vh;
         padding-bottom: 5rem;
-        padding-left: 4rem;
+        padding-left: 4.5rem;
         padding-top: 3rem;
+    }
+
+    @media (max-width: 1200px){
+        #image-track{
+            transform: translate(-60%);
+        }
+
+    @media (max-width: 1500px){
+        .title{
+            
+        }
+    }
+
+    @media (max-width: 1000px){
+        #image-track{
+            transform: translate(-84%);
+        }
+    }
+
+    @media (max-width: 900px) {
+        .pro-container{
+            padding-left: 4.5rem;
+            padding-top: 2rem;
+        }
+        .heading{
+            width:88vw;
+            height:18vh;
+            border-radius: 40px;
+            position:relative;
+        }
+
+        #image-track{
+        transform: translate(-5%);
+        }
+
+        #image-track > a > .item-1{
+            background-image: url("public/images/blue_gradient.jpg");
+            background-position: 45%;
+            background-size: cover;
+            z-index: 5;
+        }
+
+        #image-track > a > .item-2{
+            background-image: url("public/images/green_gradient.jpg");
+            background-position: center;
+            background-size: cover;
+            z-index: 5;
+            transition: transform 1s;
+        }
+
+        #image-track > a > .item-3{
+            background-image: url("public/images/purple_gradient.jpg");
+            background-position: center;
+            background-size: cover;
+            z-index: 5;
+            transition: transform 1s;
+        }
+        
+        #image-track > a > .item-4{
+            background-image: url("public/images/sun_gradient.jpg");
+            background-position: center;
+            background-size: cover;
+            z-index: 5;
+            transition: transform 1s;
+        }
+
+        #image-track > a > .item-1.active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        
+        #image-track > a > .item-2.active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        
+        #image-track > a > .item-3.active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+
+        #image-track > a > .item-4.active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
 }
 </style>
 
