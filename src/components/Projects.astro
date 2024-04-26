@@ -11,7 +11,7 @@
                 </div>
             </a>
             <a href="https://github.com/Mightysteve101/art-culture-grid">
-                <div class="heading item-2 scroll-reveal">
+                <div class="heading item-2 scroll-reveal">``~
                     <h3 style="color: white">Project 2</h3>
                     <h2 style="color: white">ENMU Culture Page Update</h2>
                 </div>
@@ -38,6 +38,12 @@
 <!-------------------------------------->
 
 <style>
+
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
     h3{
         padding-bottom: .5rem;
@@ -125,12 +131,12 @@
     }
 
     #image-track {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3vmin;
-    justify-content: center;
-    align-items: center;
-    user-select: none; /* -- Prevent image highlighting -- */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vmin;
+        justify-content: center;
+        align-items: center;
+        user-select: none; /* -- Prevent image highlighting -- */
     }
 
     #image-track > a{
@@ -139,100 +145,11 @@
     }
 
     .pro-container{
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
         height: 95vh;
+        width: 100vw;
         padding-bottom: 5rem;
-        padding-left: 4.5rem;
         padding-top: 3rem;
     }
-
-    @media (max-width: 1200px){
-        #image-track{
-            transform: translate(-60%);
-        }
-
-    @media (max-width: 1500px){
-        .title{
-            
-        }
-    }
-
-    @media (max-width: 1000px){
-        #image-track{
-            transform: translate(-84%);
-        }
-    }
-
-    @media (max-width: 900px) {
-        .pro-container{
-            padding-left: 4.5rem;
-            padding-top: 2rem;
-        }
-        .heading{
-            width:88vw;
-            height:18vh;
-            border-radius: 40px;
-            position:relative;
-        }
-
-        #image-track{
-        transform: translate(-5%);
-        }
-
-        #image-track > a > .item-1{
-            background-image: url("public/images/blue_gradient.jpg");
-            background-position: 45%;
-            background-size: cover;
-            z-index: 5;
-        }
-
-        #image-track > a > .item-2{
-            background-image: url("public/images/green_gradient.jpg");
-            background-position: center;
-            background-size: cover;
-            z-index: 5;
-            transition: transform 1s;
-        }
-
-        #image-track > a > .item-3{
-            background-image: url("public/images/purple_gradient.jpg");
-            background-position: center;
-            background-size: cover;
-            z-index: 5;
-            transition: transform 1s;
-        }
-        
-        #image-track > a > .item-4{
-            background-image: url("public/images/sun_gradient.jpg");
-            background-position: center;
-            background-size: cover;
-            z-index: 5;
-            transition: transform 1s;
-        }
-
-        #image-track > a > .item-1.active{
-            transform: translateX(0%);
-            opacity: 1;
-        }
-        
-        #image-track > a > .item-2.active{
-            transform: translateX(0%);
-            opacity: 1;
-        }
-        
-        #image-track > a > .item-3.active{
-            transform: translateX(0%);
-            opacity: 1;
-        }
-
-        #image-track > a > .item-4.active{
-            transform: translateX(0%);
-            opacity: 1;
-        }
-    }
-}
 </style>
 
 
