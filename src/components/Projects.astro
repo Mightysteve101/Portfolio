@@ -11,7 +11,7 @@
                 </div>
             </a>
             <a href="https://github.com/Mightysteve101/art-culture-grid">
-                <div class="heading item-2 scroll-reveal">``~
+                <div class="heading item-2 scroll-reveal">
                     <h3 style="color: white">Project 2</h3>
                     <h2 style="color: white">ENMU Culture Page Update</h2>
                 </div>
@@ -46,7 +46,12 @@
     }
 
     h3{
+        font-size: 1rem;
         padding-bottom: .5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
     }
 
     .heading{
@@ -60,6 +65,12 @@
 
     #image-track{
         transform: translate(-45%);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vmin;
+        justify-content: center;
+        align-items: center;
+        user-select: none; /* -- Prevent image highlighting -- */
     }
 
     #image-track > a > .item-1{
@@ -125,18 +136,9 @@
     }
 
     h1{
-        margin-left: 5rem;
+        padding-left: 5rem;
         font-size: 4rem;
-        font-weight: 500;
-    }
-
-    #image-track {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3vmin;
-        justify-content: center;
-        align-items: center;
-        user-select: none; /* -- Prevent image highlighting -- */
+        font-weight: 500; 
     }
 
     #image-track > a{
@@ -150,6 +152,147 @@
         padding-bottom: 5rem;
         padding-top: 3rem;
     }
+
+
+    @media (max-width: 1200px){
+
+        .title{
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            padding-left: 0rem;
+            font-size: 3.7rem;
+        }
+
+        h2{
+            font-size: 1.4rem;
+        }
+
+        h3{
+            font-size: .9rem;
+        }
+        .heading{
+            width:22.5vw;
+            height:60vh;
+        }
+
+        .pro-container{
+            height: 80vh;
+            width: 100vw;
+        } 
+    }
+
+    @media (max-width: 1000px){
+
+        .title{
+            text-align: center;
+            padding: 2rem 2rem .5rem 2rem;
+        }
+
+        .pro-container{
+            height: 105vh;
+            width: 100vw;
+        } 
+
+        .heading{
+            padding: 2rem;
+            width:75vw;
+            height:20vh;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        #image-track{
+            transform: translate(0%);
+        }
+
+        #image-track > a > .item-1{
+            background-image: url("public/images/blue_gradient.jpg");
+            background-position: 45%;
+            background-size: cover;
+            z-index: 5;
+    }
+
+        #image-track > a > .item-2{
+            background-image: url("public/images/green_gradient.jpg");
+            background-position: center;
+            background-size: cover;
+            z-index: 5;
+            transition: transform 1s;
+        }
+
+        #image-track > a > .item-3{
+            background-image: url("public/images/purple_gradient.jpg");
+            background-position: center;
+            background-size: cover;
+            z-index: 5;
+            transition: transform 1s;
+        }
+        
+        #image-track > a > .item-4{
+            background-image: url("public/images/sun_gradient.jpg");
+            background-position: center;
+            background-size: cover;
+            z-index: 5;
+            transition: transform 1s;
+        }
+
+        #image-track > a > .item-1.active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        
+        #image-track > a > .item-2.active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        
+        #image-track > a > .item-3.active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+
+        #image-track > a > .item-4.active{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        
+    }
+
+    @media (max-width: 660px){
+        h1{
+            font-size: 3.5rem;
+        }
+        h2{
+            font-size: 1.3rem;
+        }
+        h3{
+            font-size: .8rem;
+        }
+    }
+
+    @media (max-width: 560px){
+        h1{
+            font-size: 3.1rem;
+        }
+        h2{
+            font-size: 1rem;
+        }
+        h3{
+            font-size: .6rem;
+        }
+    }
+
+
+
+
+
+    @media (max-width:560px){
+       
+    }
+
 </style>
 
 
