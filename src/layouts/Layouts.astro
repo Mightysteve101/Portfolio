@@ -15,6 +15,7 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script src="https://kit.fontawesome.com/a533351109.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<slot />
@@ -48,6 +49,7 @@ const { title } = Astro.props;
 		background-size: auto;
         color: var(--typography);
         line-height: 1.3505882353;
+		scroll-behavior: smooth;
 	}
 
 

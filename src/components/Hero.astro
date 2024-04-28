@@ -7,7 +7,7 @@
         <div class="hero-caption">
             <h1>Isaac Evans</h1>
             <h2>Aspiring Web Developer</h2>
-            <!--<button>Resume</button>-->
+            <div class="cta"><a href="#"><button>Resume</button></a></div>
         </div>
     </div>
 </div>
@@ -20,7 +20,15 @@
 <style>
 
     button{
-
+        font-size: 1.1rem;
+        font-weight: 500
+        padding: .7rem;
+        color: var(--primary);
+        border-radius: 40px;
+        border: none;
+        width: 8rem;
+        height: 3.5rem;
+        background: linear-gradient(180deg, rgb(239, 168, 255) 0%, rgb(34, 19, 35) 100%); 
     }
 
     h1{
@@ -30,12 +38,16 @@
     }
     h2{
         font-weight: 600;
+        padding-bottom: 2rem;
     }
     .hero-caption{
+        display: flex;
+        flex-direction: column;
         font-size: 1rem;
         position: relative;
         z-index: 10;
         margin-top: -20rem; 
+        align-items: center;
     }
     .container{
         width: 100vw;
