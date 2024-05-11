@@ -4,26 +4,26 @@
     </div>
     <div class="pro-container">
         <div id="image-track">
-            <a href="https://github.com/Mightysteve101/ENMU_Faculty">
-                <div class="heading item-1 scroll-reveal">
+            <a href="https://github.com/Mightysteve101/ENMU_Faculty" target="_blank">
+                <div class="heading item-1">
                     <h3 style="color: white">Project 1</h3>
                     <h2 style="color: white">ENMU Faculty Page</h2>
                 </div>
             </a>
-            <a href="https://github.com/Mightysteve101/art-culture-grid">
-                <div class="heading item-2 scroll-reveal">
+            <a href="https://github.com/Mightysteve101/art-culture-grid" target="_blank">
+                <div class="heading item-2">
                     <h3 style="color: white">Project 2</h3>
                     <h2 style="color: white">ENMU Culture Page Update</h2>
                 </div>
             </a>
-            <a href="https://github.com/Mightysteve101/Database-Project">
-                <div class="heading item-3 scroll-reveal">
+            <a href="https://github.com/Mightysteve101/Database-Project" target="_blank">
+                <div class="heading item-3">
                     <h3 style="color: white">Project 3</h3>
                     <h2 style="color: white">SQLite Group Project</h2>
                 </div>
             </a>
-            <a href="https://github.com/Mightysteve101/Faculty_Advisor_Directroy">
-                <div class="heading item-4 scroll-reveal">
+            <a href="https://github.com/Mightysteve101/Faculty_Advisor_Directroy" target="_blank">
+                <div class="heading item-4">
                     <h3 style="color: white">Project 4</h3>
                     <h2 style="color: white">Faculty Advisor Directory Update</h2>
                 </div>
@@ -64,7 +64,6 @@
 
 
     #image-track{
-        transform: translate(-45%);
         display: flex;
         flex-wrap: wrap;
         gap: 3vmin;
@@ -74,74 +73,50 @@
     }
 
     #image-track > a > .item-1{
+        position: relative;
         background-image: url("/images/blue_gradient.jpg");
         background-position: 45%;
         background-size: cover;
-        z-index: 5;
+        transition: transform .3s;
     }
 
     #image-track > a > .item-2{
+        position: relative;
         background-image: url("/images/green_gradient.jpg");
         background-position: center;
         background-size: cover;
-        z-index: 5;
-        transition: transform 1s;
+        transition: transform .3s;
     }
 
     #image-track > a > .item-3{
+        position: relative;
         background-image: url("/images/purple_gradient.jpg");
         background-position: center;
         background-size: cover;
-        z-index: 5;
-        transition: transform 1s;
+        transition: transform .3s;
     }
     
     #image-track > a > .item-4{
+        position: relative;
         background-image: url("/images/sun_gradient.jpg");
         background-position: center;
         background-size: cover;
-        z-index: 5;
-        transition: transform 1s;
+        transition: transform .3s;
     }
-
-    #image-track > a > .item-1.active{
-        transform: translateX(0%);
-        opacity: 1;
-    }
-    
-    #image-track > a > .item-2.active{
-        transform: translateX(100%);
-        opacity: 1;
-    }
-    
-    #image-track > a > .item-3.active{
-        transform: translateX(200%);
-        opacity: 1;
-    }
-
-    #image-track > a > .item-4.active{
-        transform: translateX(300%);
-        opacity: 1;
-    }
-
     #image-track > a > .item-1:hover{
-        border: 3px solid rgb(219, 219, 219);
-        transition: border-color .6s ease;
+        transform: scale(1.025);
     }
 
     #image-track > a > .item-2:hover{
-        border: 3px solid rgb(219, 219, 219);
-        transition: border-color .6s ease;
+        transform: scale(1.025);
     }
 
     #image-track > a > .item-3:hover{
-        border: 3px solid rgb(219, 219, 219);
-        transition: border-color .6s ease;
+        transform: scale(1.025);
     }
 
     #image-track > a > .item-4:hover{
-        border: 3px solid rgb(219, 219, 219);
-        transition: border-color .6s ease;
+        transform: scale(1.025);
     }
 
     .title{
@@ -222,60 +197,50 @@
             position: relative;
         }
 
-        #image-track{
-            transform: translate(0%);
-        }
+        
 
         #image-track > a > .item-1{
             background-image: url("/images/blue_gradient.jpg");
             background-position: 45%;
             background-size: cover;
-            z-index: 5;
-            transition: transform .2s;
+            transition: transform .3s;
     }
 
         #image-track > a > .item-2{
             background-image: url("/images/green_gradient.jpg");
             background-position: center;
             background-size: cover;
-            z-index: 5;
-            transition: transform 1s;
+            transition: transform .3s;
         }
 
         #image-track > a > .item-3{
             background-image: url("/images/purple_gradient.jpg");
             background-position: center;
             background-size: cover;
-            z-index: 5;
-            transition: transform 1s;
+            transition: transform .3s;
         }
         
         #image-track > a > .item-4{
             background-image: url("/images/sun_gradient.jpg");
             background-position: center;
             background-size: cover;
-            z-index: 5;
-            transition: transform 1s;
+            transition: transform .3s;
         }
 
-        #image-track > a > .item-1.active{
-            transform: translateX(0%);
-            opacity: 1;
-        }
-        
-        #image-track > a > .item-2.active{
-            transform: translateX(0%);
-            opacity: 1;
-        }
-        
-        #image-track > a > .item-3.active{
-            transform: translateX(0%);
-            opacity: 1;
+        #image-track > a > .item-1:hover{
+            transform: scale(1.025);
         }
 
-        #image-track > a > .item-4.active{
-            transform: translateX(0%);
-            opacity: 1;
+        #image-track > a > .item-2:hover{
+            transform: scale(1.025);
+        }
+
+        #image-track > a > .item-3:hover{
+            transform: scale(1.025);
+        }
+
+        #image-track > a > .item-4:hover{
+            transform: scale(1.025);
         }
     }
 
@@ -312,8 +277,3 @@
     }
 
 </style>
-
-
-<script>
-    import "../scripts/projects.js";
-</script>
